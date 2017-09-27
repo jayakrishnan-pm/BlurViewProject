@@ -2,12 +2,15 @@
 Usage:
 
  //Image view to be blurred
+ 
  ImageView bgImgView = (ImageView) findViewById(R.id.bgImgView);
 
 //Get the bitmap from the ImageView.
+
 Bitmap bitmap = ((BitmapDrawable) bgImgView.getDrawable()).getBitmap();
 
 //Let's apply Gaussian blur effect with radius "10.5" and set to ImageView.
+
 bgImgView.setImageBitmap(new BlurUtils().blur(MainActivity.this, bitmap, 10.5f));
 
 Output
